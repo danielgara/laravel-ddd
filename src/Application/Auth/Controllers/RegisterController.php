@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Src\Application\Auth\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -70,5 +70,10 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'balance' => 5000,
         ]);
+    }
+
+    public function showRegistrationForm()
+    {
+        return view('auth.views.register');
     }
 }
