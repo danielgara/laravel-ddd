@@ -2,7 +2,7 @@
 
 namespace Src\Application\Admin\Controllers;
 
-use App\Http\Controllers\Controller;
+use Src\Application\Shared\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class AdminHomeController extends Controller

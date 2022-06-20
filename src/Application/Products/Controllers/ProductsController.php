@@ -2,9 +2,9 @@
 
 namespace Src\Application\Products\Controllers;
 
-use App\Models\Product;
+use Src\Domain\Products\Models\Product;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Src\Application\Shared\Controllers\Controller;
 
 class ProductsController extends Controller
 {

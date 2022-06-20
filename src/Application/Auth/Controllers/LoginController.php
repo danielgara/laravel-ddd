@@ -2,7 +2,7 @@
 
 namespace Src\Application\Auth\Controllers;
 
-use App\Http\Controllers\Controller;
+use Src\Application\Shared\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 

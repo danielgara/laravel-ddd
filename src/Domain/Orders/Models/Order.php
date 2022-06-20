@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models;
+namespace Src\Domain\Orders\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use App\Models\User;
-use App\Models\Item;
+use Src\Domain\Users\Models\User;
+use Src\Domain\Items\Models\Item;
 
 class Order extends Model
 {

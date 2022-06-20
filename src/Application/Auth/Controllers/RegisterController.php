@@ -2,9 +2,9 @@
 
 namespace Src\Application\Auth\Controllers;
 
-use App\Http\Controllers\Controller;
+use Src\Application\Shared\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
-use App\Models\User;
+use Src\Domain\Users\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;

@@ -2,8 +2,8 @@
 
 namespace Src\Application\Admin\Controllers;
 
-use App\Models\Product;
-use App\Http\Controllers\Controller;
+use Src\Domain\Products\Models\Product;
+use Src\Application\Shared\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 

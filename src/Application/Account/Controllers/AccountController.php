@@ -3,9 +3,9 @@
 namespace Src\Application\Account\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Order;
+use Src\Domain\Orders\Models\Order;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\Controller;
+use Src\Application\Shared\Controllers\Controller;
 
 class AccountController extends Controller
 {
