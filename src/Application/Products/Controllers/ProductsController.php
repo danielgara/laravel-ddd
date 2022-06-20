@@ -14,7 +14,7 @@ class ProductsController extends Controller
         $viewData["title"] = "Products - Online Store";
         $viewData["subtitle"] =  "List of products";
         $viewData["products"] = Product::all();
-        return view('product.index')->with("viewData", $viewData);
+        return view('products.views.index')->with("viewData", $viewData);
     }
 
     public function show($id)
@@ -24,6 +24,6 @@ class ProductsController extends Controller
         $viewData["title"] = $product->getName()." - Online Store";
         $viewData["subtitle"] =  $product->getName()." - Product information";
         $viewData["product"] = $product;
-        return view('product.show')->with("viewData", $viewData);
+        return view('products.views.show')->with("viewData", $viewData);
     }
 }

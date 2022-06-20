@@ -27,7 +27,7 @@ class CartController extends Controller
         $viewData["subtitle"] =  "Shopping Cart";
         $viewData["total"] = $total;
         $viewData["products"] = $productsInCart;
-        return view('cart.index')->with("viewData", $viewData);
+        return view('cart.views.index')->with("viewData", $viewData);
     }
 
     public function add(Request $request, $id)
@@ -80,7 +80,7 @@ class CartController extends Controller
             $viewData["title"] = "Purchase - Online Store";
             $viewData["subtitle"] =  "Purchase Status";
             $viewData["order"] =  $order;
-            return view('cart.purchase')->with("viewData", $viewData);
+            return view('cart.views.purchase')->with("viewData", $viewData);
         } else {
             return redirect()->route('cart.index');
         }
