@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Application\Account;
+namespace Src\Application\Account\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Order;

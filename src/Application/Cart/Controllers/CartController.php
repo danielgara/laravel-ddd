@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Application\Cart;
+namespace Src\Application\Cart\Controllers;
 
 use App\Models\Product;
 use App\Models\Order;

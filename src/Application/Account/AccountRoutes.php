@@ -8,7 +8,7 @@ class AccountRoutes
 {
     public static function configRoutes(){
         Route::middleware('auth')->group(function () {
-            Route::get('/my-account/orders', 'Src\Application\Account\AccountController@orders')->name("myaccount.orders");
+            Route::get('/my-account/orders', 'Src\Application\Account\Controllers\AccountController@orders')->name("myaccount.orders");
         });
     }
 }

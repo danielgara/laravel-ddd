@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 class HomeRoutes
 {
     public static function configRoutes(){
-        Route::get('/', 'Src\Application\Home\HomeController@index')->name("home.index");
-        Route::get('/about', 'Src\Application\Home\HomeController@about')->name("home.about");
+        Route::get('/', 'Src\Application\Home\Controllers\HomeController@index')->name("home.index");
+        Route::get('/about', 'Src\Application\Home\Controllers\HomeController@about')->name("home.about");
     }
 }
